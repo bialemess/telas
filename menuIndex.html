@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 4.0;
+  background: #778899;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  width: 500px;
+  margin: 100px auto 20px;
+  color: white;
+  text-align: center;
+}
+
+.nav {
+  width: 500px;
+  margin: 0 auto;
+  background: #1D2951;
+  color: white;
+}
+.nav a {
+  display: block;
+  padding: 0 16px;
+  line-height: inherit;
+  cursor: pointer;
+}
+.nav__menu {
+  line-height: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav__menu-item {
+  display: inline-block;
+  position: relative;
+}
+.nav__menu-item:hover {
+  background-color: darkgrey;
+}
+.nav__menu-item:hover .nav__submenu {
+  display: block;
+}
+.nav__submenu {
+  font-weight: 300;
+  text-transform: none;
+  display: none;
+  position: absolute;
+  width: 220px;
+  background-color: #B0C4DE;
+}
+.nav__submenu-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+  </style>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu</title>
+  
+
+</head>
+<body>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,300" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+<h1>
+ Bem vindo(a)
+</h1>
+<nav class="nav">
+  <ul class="nav__menu">
+
+    <li class="nav__menu-item">
+      <a>Cadastro</a>
+      <ul class="nav__submenu">
+        <li class="nav__submenu-item">
+          <a>Produtos</a>
+        </li>
+        <li class="nav__submenu-item">
+          <a>Usuários</a>
+        </li>
+      
+      </ul>
+    </li>
+    <li class="nav__menu-item">
+      <a>Relatórios</a>
+      <ul class="nav__submenu">
+        <li class="nav__submenu-item">
+          <a>Mensal</a>
+        </li>
+        <li class="nav__submenu-item">
+          <a>Individual</a>
+        </li>
+        
+      </ul>
+    </li>
+   
+  
+    
+    <li class="nav__menu-item">
+      <a>  Pedidos</a>
+      <ul class="nav__submenu">
+        <li class="nav__submenu-item">
+          <a>Pendentes</a>
+        </li>
+        <li class="nav__submenu-item">
+          <a>Fazer pedido</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+     <li class="nav__menu-item">
+      <a>Deslogar</a>
+    </li>
+    
+  </ul>
+ 
+  
+</nav>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
