@@ -87,6 +87,7 @@
       font-weight: bold;
       border-radius: 15px;
       text-align: center;
+      z-index: 500;
     }
 
     #custom-alert p {
@@ -138,13 +139,16 @@
     .w3-button:hover {
       color: #000 !important;
       font-weight: 700;
-      background-color: rgb(0, 127, 130) !important
+      background-color: rgb(161, 46, 47) !important;
+      padding: 3%;
+      
     }
 
 
 
     #form1 {
 
+        z-index: 5;
       position: absolute;
       /* define a largura máxima do formulário */
       max-width: 800px;
@@ -162,6 +166,8 @@
 
     #form2 {
 
+
+        z-index: 5;
       position: absolute;
       /* define a largura máxima do formulário */
       max-width: 800px;
@@ -178,6 +184,7 @@
 
     #form3 {
 
+        z-index: 5;
       position: absolute;
       /* define a largura máxima do formulário */
       max-width: 800px;
@@ -195,6 +202,7 @@
 
     #form4 {
 
+        z-index: 5;
       position: absolute;
       /* define a largura máxima do formulário */
       max-width: 800px;
@@ -222,6 +230,17 @@
 
     body {
       margin: 0;
+      
+    }
+
+    .unicamp {
+        position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 500px;
+z-index: 2;
     }
   </style>
 </head>
@@ -233,7 +252,7 @@
     <button id="ok-button" aria-required="click">Ok</button>
   </div>
 
-
+  
   <div id="site-content" style="display: none;">
 
     <!-- Sidebar -->
@@ -241,6 +260,7 @@
 
       <h4 style="color: white; font-weight: bold; margin-top: 10px;"> Menu de Cadastro</h4>
       <hr>
+      <br>
       <a href="#" class="w3-bar-item w3-button " style="text-decoration: none;">Adicionar &nbsp;&nbsp;
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square"
           viewBox="0 0 16 16">
@@ -283,7 +303,8 @@
             d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
         </svg>
       </a>
-      <hr>
+     
+      <br>
       <a href="#" onclick="trocarFormulario('form1')" class="w3-bar-item w3-button"
         style="text-decoration: none;">Produtos &nbsp;&nbsp;&nbsp;&nbsp;
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill"
@@ -318,11 +339,10 @@
             d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z" />
         </svg>
       </a>
-      <hr>
-      <a href="inicio.html" class="w3-bar-item w3-button" style="text-align: center; text-decoration: none;">Voltar</a>
+    
+      <a href="inicio.html" class="w3-bar-item w3-button" style="text-align: center; text-decoration: none; position: absolute; bottom: 0;;">Voltar</a>
 
     </div>
-
 
 
 
@@ -499,6 +519,8 @@
 
   </div>
 
+  
+  <img class="unicamp" src="https://www.ic.unicamp.br/~stolfi/EXPORT/projects/ic-logos/2010-03-16/logotipos/png/logo-unicamp-anon-line-wht-wht-0240.png">
 
 </body>
 
